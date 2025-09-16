@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     body{
+         font-family: 'Poppins', sans-serif;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         background-color:#383838 ;
+         color: aliceblue;
+         transition: all 0.4s;
+     }
+
+     .parent{
+    padding: 20px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: rgba(92, 92, 92, 0.5); /* <-- make it semi-transparent */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* for Safari */
+    height: 80vh;
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+    border-radius: 15px;
+    transition: all 0.3s ease;
+        
+     }
+     .parent:hover{
+        transform: scale(1.05);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.671);
+     }
+
+     input{
+        padding: 10px ;
+        border-radius: 12px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: bold;
+        text-align: center;
+       
+     }
+     .btn{
+        padding: 10px;
+        margin: 5px;
+        border-radius: 12px;
+         font-family: 'Poppins', sans-serif;
+         font-weight: bold;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        background-color: #82ffb0;
+        transition: all 0.3s;
+     }
+     .btn:hover{
+        background-color: #6eda95;
+        transform: translateY(-10px);
+     }
+     .light{
+        background-color: aliceblue;
+        color: #383838;
+        
+     }
+     ul li{
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+     }
+     
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>Grinding Zone</h1>
+        <p>"Don't stop when u are tired,stop when u are done"</p>
+        <p>"Talk is cheap show me the code"</p>
+        <h2>Make ur grinding list here</h2>
+        <input id="content" type="text" placeholder="Enter Ur Grind">
+        <button class="btn" id="grindbtn">Grind Now</button><button class="btn" id="theme">Toggle</button>
+        <ul id="grindoutput" class="grindoutput"></ul>
+ 
+    </div>
+</body>
+<script>
+    let counter=1
+    let content=document.getElementById("content")
+    let grindbtn=document.getElementById("grindbtn")
+    let theme =document.getElementById("theme")
+    let output =document.getElementById("grindoutput")
+
+    grindbtn.addEventListener("click",()=>{
+        const text=content.value.trim()
+        if(text===""){
+            alert("Plz fill ur grind!!")
+        }
+
+        const li=document.createElement("li")
+        li.classList.add("li")
+
+        li.innerHTML=`${text} <input type="checkbox"> <button class="btn">Delete</button>`
+
+        li.querySelector(".btn").addEventListener("click",()=>{
+            li.remove()
+        })
+
+        grindoutput.appendChild(li)
+        counter++
+        content.value=""
+    })
+
+
+
+    theme.addEventListener("click",()=>{
+        document.body.classList.toggle("light")
+    })
+</script>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    margin: 0;
+    color: rgba(240, 248, 255, 0.863);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    padding: 5px;
+}
+
+ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    list-style: none;
+}
+
+li a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 5px;
+    margin: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, padding 0.3s ease, border-radius 0.3s ease, margin 0.3s ease;
+
+}
+
+li a:hover {
+    background-color: rgba(197, 224, 233, 0.2);
+
+    border-radius: 6px;
+
+}
+
+.hero {
+    padding: 15px;
+
+}
+
+.features {
+    padding: 20px;
+}
+
+.fe {
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    padding: 15px;
+
+}
+
+.fe p {
+    background-color: rgba(197, 224, 233, 0.1);
+    padding: 5px;
+    border-radius: 6px;
+    font-size: large;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.fe p:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.prices {
+    padding: 20px;
+}
+
+.pri {
+    display: flex;
+    padding: 10px;
+  
+}
+
+.card {
+    font-weight: 600;
+    margin: 10px;
+    background-color: rgba(197, 224, 233, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.whyme {
+    padding: 20px;
+}
+
+.whyme li {
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+
+}
+
+.whyme li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
+        0 2px 4px rgba(0, 0, 0, 0.06);
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 6px;
+}
+
+.form {
+    padding: 20px;
+
+}
+
+input {
+    padding: 10px;
+    margin: 6px;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 10px;
+    margin: 6px;
+    border-radius: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: rgb(186, 255, 232);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+
+}
+
+.btn:hover{
+     box-shadow: 0 4px 6px rgb(49, 49, 49),
+        0 2px 4px rgb(44, 44, 44);
+}
+
+footer{
+    text-align: center;
+    font-weight: 600;
+    font-size: large;
+    padding: 15px;
+}
+
+.parent::selection{
+    color: aqua;
+    background-color: black;
+}
+
+@media(max-width:600px){
+    .parent{
+        width: 90%;
+    }
+    .pri{
+        flex-direction: column;
+    align-items: center;
+    }
+    .card{
+        width: 90%;
+    }
+}
+    </style>
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<body>
+    <div class="parent">
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="hero">
+            <h1>“Build faster. Launch smarter.”</h1>
+            <h2>“Professional web design and development tailored for you.”</h2>
+
+            <h2>“High-quality, responsive websites that convert visitors into clients.”</h2>
+        </div>
+
+        <div class="features">
+            <h3>Features of my Landing page</h3>
+            <div class="fe">
+                <p>Speed</p>
+                <p>Secured</p>
+                <p>Responsive</p>
+                <p>Good UI</p>
+            </div>
+        </div>
+
+       <div class="prices">
+  <h3>Plans</h3>
+  <div class="pri">
+    <div class="card">
+      <h3>Basic</h3>
+      <p>I will create a simple, responsive one-page website with contact form. <br> Price: $80</p>
+    </div>
+
+    <div class="card">
+      <h3>Standard</h3>
+      <p>I will build a 3-page responsive website (Home, About, Contact) with custom design. <br> Price: $120</p>
+    </div>
+
+    <div class="card">
+      <h3>Premium</h3>
+      <p>I will create a 5-page website with animations, SEO basics, and fast loading. <br> Price: $150</p>
+    </div>
+  </div>
+</div>
+
+        <div class="whyme">
+            <h3>Why Choose Me?</h3>
+            <ul>
+                <li>✔ Custom, modern designs tailored for your brand</li>
+                <li>✔ Mobile-friendly & responsive websites</li>
+                <li>✔ Fast delivery with clean, optimized code</li>
+                <li>✔ Affordable pricing for high-quality work</li>
+                <li>✔ Long-term support & future updates</li>
+            </ul>
+        </div>
+
+        <div class="form">
+            <h3>Get in Touch</h3>
+            <p>Have a project in mind? Drop your details below.</p>
+           <div><input type="text" placeholder="Enter Your Name"></div>
+           <div><input type="number" placeholder="Enter Your Number"></div>
+           <div><input type="text" placeholder="Enter Your Address"></div>
+           <button class="btn">Submit</button>
+        </div>
+    </div>
+
+    <footer>© 2025 YourBrand. All Rights Reserved.</footer>
+</body>
+
+</html>

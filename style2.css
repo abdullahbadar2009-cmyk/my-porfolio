@@ -1,0 +1,180 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+    gap: 30px;
+    background-image: url(https://hougumlaw.com/wp-content/uploads/2016/05/light-website-backgrounds-light-color-background-images-light-color-background-images-for-website-1024x640.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+
+}
+
+.navbar {
+
+    font-weight: bold;
+    background-color: #dbdbdbc0;
+    color: whitesmoke;
+    width: 60%;
+    border-radius: 20px;
+
+
+
+}
+
+
+ul {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.navbar ul li {
+    list-style: none;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 12px;
+    transition: all 0.3s;
+}
+
+li a {
+    text-decoration: none;
+    color: grey;
+    font-size: large;
+
+}
+
+ul li:hover {
+    background-color: #f8f8f8ee;
+}
+
+.main {
+    padding: 20px;
+    background-color: #dbdbdbc0;
+    border-radius: 20px;
+    color: rgba(14, 14, 14, 0.993);
+
+}
+
+img {
+    width: 200px;
+    margin: 30px;
+}
+
+.skills {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.skills img {
+    border-radius: 12px;
+    padding: 5px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.skills img:hover {
+    background-color: rgb(192, 192, 192);
+    transform: scale(1.05);
+     box-shadow: 0 6px 15px rgb(107, 107, 107);
+}
+
+.projects {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.projects a {
+    text-decoration: none;
+    color: grey;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.projects a:hover {
+    background-color: rgb(255, 251, 243);
+    text-decoration: underline;
+    border-radius: 12px;
+}
+
+.btn {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: lightgreen;
+    font-family: cursive;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+    margin: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+     transform: scale(1.05);
+     background-color: rgb(123, 202, 123);
+}
+
+.snapshot{
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+    color:grey ;
+}
+.snapshot p{
+     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    text-align: center;
+    width: 200px;
+    height:100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.snapshot p:hover{
+    transform: translateY(-20px);
+     box-shadow: 0 6px 15px rgb(107, 107, 107);
+}
+
+.main p{
+    font-size: large;
+    line-height: 2;
+}
+
+input{
+    padding: 10px;
+    font-family: cursive;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+footer{
+    font-size: large;
+}
+
+@media (max-width:600px){
+
+   
+    .navbar{
+        width: 90%;
+    }
+    .main{
+        width: 90%;
+    }
+}

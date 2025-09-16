@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background-color: #121212;
+    color: #fff;
+    text-align: center;
+   display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; 
+    margin: 0; 
+    padding: 20px 0;
+
+
+    
+    
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+li a {
+
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 40px;
+    color: black;
+    font-weight: 600;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0);
+    transition: all 0.3s ease;
+    
+
+}
+
+
+
+nav {
+    background-color: rgb(255, 255, 255);
+    padding: 1px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    width: 90%;
+    
+   
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+li a:hover {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+
+}
+
+.parent {
+
+    padding: 30px;
+    margin-top: 60px;
+    background: #1e1e1e;
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+
+
+
+}
+
+.parent h1 {
+    text-align: center;
+}
+
+.parent span {
+    margin: 20px;
+    font-size: large;
+}
+
+.skill {
+    padding: 20px;
+    text-align: center;
+}
+
+.skill img {
+    width: 200px;
+    margin: 30px;
+    box-shadow: 0 4px 20px rgba(151, 151, 151, 0.5);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    
+}
+
+.skill img:hover {
+    background-color: white;
+    transform: translateY(-20px);
+
+}
+.project{
+    padding: 20px;
+}
+.project a{
+    text-decoration: none;
+    color: whitesmoke;
+    margin: 30px;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+
+}
+.project a:hover{
+    text-decoration: underline;
+    background: rgba(129, 129, 129, 0.829);
+    backdrop-filter: blur(10px);
+}
+
+footer{
+    font-size: large;
+    padding: 20px;
+}
+
+
+@media(max-height:600px) {
+    body{
+        width: 90%;
+    }
+
+    nav ul a{
+        width: 90%;
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        
+        
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">More</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+    
+    <div class="parent">
+        <h1>Portfolio</h1>
+        <span>Web-Developer</span> <span>Entrepreneur-in-progress</span>
+        <div class="box">
+            <h4>I’m a front-end developer passionate about building modern, responsive websites with HTML, CSS, and
+                JavaScript. I focus on clean design, user-friendly layouts, and performance. With every project, I aim
+                to combine creativity and precision to deliver work that helps clients bring their ideas to life.</h4>
+        </div>
+
+        <h3>Expert at</h3>
+        <div class="skill">
+            <img src=https://www.curso-de-java.mx/images/diplomado-php-html.png alt="Skill image">
+
+            <img src="https://www.curso-de-java.mx/images/icono-css.png" alt="Skill image">
+
+            <img src="https://www.curso-de-java.mx/images/icono-javascript-2.png" alt="Skill image">
+        </div>
+
+        <h3>Building Ideas into Reality</h3>
+        <div class="project">
+            <a href="index.html" target="_blank">View Idea</a>
+            <a href="inde.html" target="_blank">View Idea</a>
+            <a href="indexii.html" target="_blank">View Idea</a>
+
+        </div>
+    </div>
+    <footer>© 2025 Abdullah Badar. All rights reserved.</footer>
+    
+</body>
+
+</html>
